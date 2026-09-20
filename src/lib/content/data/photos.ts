@@ -1,0 +1,71 @@
+import type { Photo } from "../types";
+
+export const photos: Photo[] = [
+  {
+    id: "1",
+    src: "https://picsum.photos/seed/shabzadeh-photo-1/900/1200",
+    width: 900,
+    height: 1200,
+    caption: { fa: "کوچه‌های قدیمی هرمز", en: "The old alleys of Hormuz" },
+    tripSlug: "hormuz-island",
+  },
+  {
+    id: "2",
+    src: "https://picsum.photos/seed/shabzadeh-photo-2/1200/800",
+    width: 1200,
+    height: 800,
+    caption: { fa: "غروب روی دریا", en: "Sunset over the sea" },
+    tripSlug: "hormuz-island",
+  },
+  {
+    id: "3",
+    src: "https://picsum.photos/seed/shabzadeh-photo-3/1200/900",
+    width: 1200,
+    height: 900,
+    caption: { fa: "خاک‌های رنگین‌کمانی", en: "The rainbow soil" },
+    tripSlug: "hormuz-island",
+  },
+  {
+    id: "4",
+    src: "https://picsum.photos/seed/shabzadeh-photo-4/900/1200",
+    width: 900,
+    height: 1200,
+    caption: { fa: "قایق‌های ماهیگیری", en: "Fishing boats" },
+    tripSlug: "hormuz-island",
+  },
+  {
+    id: "5",
+    src: "https://picsum.photos/seed/shabzadeh-photo-5/1200/800",
+    width: 1200,
+    height: 800,
+    caption: { fa: "بازار محلی", en: "The local market" },
+  },
+  {
+    id: "6",
+    src: "https://picsum.photos/seed/shabzadeh-photo-6/1200/900",
+    width: 1200,
+    height: 900,
+    caption: { fa: "جاده‌ای در مه", en: "A road in the fog" },
+  },
+  {
+    id: "7",
+    src: "https://picsum.photos/seed/shabzadeh-photo-7/900/1200",
+    width: 900,
+    height: 1200,
+    caption: { fa: "نمای شب شهر", en: "The city at night" },
+  },
+  {
+    id: "8",
+    src: "https://picsum.photos/seed/shabzadeh-photo-8/1200/800",
+    width: 1200,
+    height: 800,
+    caption: { fa: "کافه‌ای گوشه خیابان", en: "A café on the corner" },
+  },
+  {
+    id: "9",
+    src: "https://picsum.photos/seed/shabzadeh-photo-9/1200/900",
+    width: 1200,
+    height: 900,
+    caption: { fa: "کوهستان در اول صبح", en: "Mountains at first light" },
+  },
+];

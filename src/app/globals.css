@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+:root {
+  --color-parchment: #f4ecdb;
+  --color-parchment-muted: #e8ddc3;
+  --color-paper: #faf6ec;
+  --color-ink: #211c1a;
+  --color-ink-soft: #57493f;
+  --color-wine: #6e1f2b;
+  --color-wine-dark: #4f1620;
+  --color-gold: #b6863a;
+  --color-gold-soft: #d9b978;
+  --color-charcoal: #201b19;
+  --color-charcoal-soft: #2c2521;
+  --color-border: #211c1a;
+
+  --font-fa: var(--font-vazirmatn);
+  --font-en-heading: var(--font-archivo-black);
+  --font-en-meta: var(--font-plex-mono);
+  --font-en-body: var(--font-inter);
+}
+
+@theme inline {
+  --color-parchment: var(--color-parchment);
+  --color-parchment-muted: var(--color-parchment-muted);
+  --color-paper: var(--color-paper);
+  --color-ink: var(--color-ink);
+  --color-ink-soft: var(--color-ink-soft);
+  --color-wine: var(--color-wine);
+  --color-wine-dark: var(--color-wine-dark);
+  --color-gold: var(--color-gold);
+  --color-gold-soft: var(--color-gold-soft);
+  --color-charcoal: var(--color-charcoal);
+  --color-charcoal-soft: var(--color-charcoal-soft);
+  --color-border: var(--color-border);
+
+  --font-fa: var(--font-fa);
+  --font-en-heading: var(--font-en-heading);
+  --font-en-meta: var(--font-en-meta);
+  --font-en-body: var(--font-en-body);
+}
+
+body {
+  background: var(--color-parchment);
+  color: var(--color-ink);
+}
+
+html[dir="rtl"] body {
+  font-family: var(--font-fa), sans-serif;
+}
+
+html[dir="ltr"] body {
+  font-family: var(--font-en-body), sans-serif;
+}
+
+/* Oversized, black-weight display headlines */
+html[dir="rtl"] .font-heading {
+  font-family: var(--font-fa), sans-serif;
+  font-weight: 900;
+}
+
+html[dir="ltr"] .font-heading {
+  font-family: var(--font-en-heading), sans-serif;
+  font-weight: 400;
+}
+
+/* Monospace-flavored meta text: nav, dates, captions, tags, small UI copy */
+html[dir="rtl"] .font-meta {
+  font-family: var(--font-fa), sans-serif;
+  font-weight: 500;
+}
+
+html[dir="ltr"] .font-meta {
+  font-family: var(--font-en-meta), monospace;
+}
+
+::selection {
+  background: var(--color-gold-soft);
+  color: var(--color-ink);
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 24s linear infinite;
+}
+
+html[dir="rtl"] .marquee-track {
+  animation-direction: reverse;
+}

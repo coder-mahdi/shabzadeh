@@ -1,0 +1,74 @@
+{
+  "Site": {
+    "name": "Shabzadeh",
+    "tagline": "Stories & Travels"
+  },
+  "Nav": {
+    "home": "Home",
+    "stories": "Stories",
+    "travelogues": "Travelogues",
+    "gallery": "Gallery",
+    "videos": "Videos",
+    "about": "About",
+    "contact": "Contact",
+    "switchLanguage": "فارسی",
+    "menu": "Menu",
+    "close": "Close"
+  },
+  "Home": {
+    "heroTitle": "A few lines of story, a few steps of travel",
+    "heroSubtitle": "Short and long stories, multi-part travelogues, photos and videos from the roads I've traveled.",
+    "exploreStories": "Read the stories",
+    "exploreTravelogues": "See the travelogues",
+    "heroCta": "Dive in",
+    "marquee": "Short Stories · Long Stories · Travelogues · Photos · Videos",
+    "latestStories": "Latest Stories",
+    "latestTravelogues": "Latest Travelogues",
+    "fromTheGallery": "From the Gallery",
+    "viewAll": "View all"
+  },
+  "Stories": {
+    "pageTitle": "Stories",
+    "pageSubtitle": "Short and long stories",
+    "filterAll": "All",
+    "filterShort": "Short story",
+    "filterLong": "Long story",
+    "readStory": "Read story",
+    "chapters": "Chapters",
+    "chapter": "Chapter",
+    "empty": "No stories have been added yet."
+  },
+  "Travelogues": {
+    "pageTitle": "Travelogues",
+    "pageSubtitle": "Every trip, told in several parts",
+    "parts": "Parts",
+    "part": "Part",
+    "readPart": "Read this part",
+    "backToTrip": "Back to trip overview",
+    "nextPart": "Next part",
+    "previousPart": "Previous part",
+    "empty": "No travelogues have been added yet."
+  },
+  "Gallery": {
+    "pageTitle": "Gallery",
+    "pageSubtitle": "Moments from the road",
+    "empty": "No photos have been added yet."
+  },
+  "Videos": {
+    "pageTitle": "Videos",
+    "pageSubtitle": "Videos from along the way",
+    "empty": "No videos have been added yet."
+  },
+  "About": {
+    "pageTitle": "About",
+    "body": "This section is where you introduce yourself — why you write, why you travel, and what this site is about."
+  },
+  "Contact": {
+    "pageTitle": "Contact",
+    "body": "For collaborations or to talk about the stories and travels, feel free to reach out.",
+    "emailLabel": "Email"
+  },
+  "Footer": {
+    "rights": "All rights reserved."
+  }
+}
