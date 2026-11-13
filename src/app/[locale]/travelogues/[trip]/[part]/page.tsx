@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { TripPartNav } from "@/components/TripPartNav";
 import { CoverImage } from "@/components/CoverImage";
+import { RichText } from "@/components/RichText";
 import { getTripPart, getTrips } from "@/lib/content/api";
 import { localize, type Locale } from "@/lib/content/types";
 
@@ -52,9 +53,10 @@ export default async function TripPartPage({
         />
       </div>
 
-      <p className="mt-8 whitespace-pre-line leading-8 text-ink">
-        {localize(part.content, loc)}
-      </p>
+      <RichText
+        content={localize(part.content, loc)}
+        className="mt-8 leading-8 text-ink"
+      />
 
       <TripPartNav
         tripSlug={trip.slug}

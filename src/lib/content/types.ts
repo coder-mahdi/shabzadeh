@@ -5,8 +5,18 @@ export type LocalizedText = {
   en: string;
 };
 
-export function localize(text: LocalizedText, locale: Locale): string {
-  return text[locale];
+/**
+ * Returns the text in the requested language, falling back to the other
+ * language when that translation hasn't been written yet in the CMS (so
+ * cards and pages never render empty).
+ */
+export function localize(
+  text: LocalizedText | null | undefined,
+  locale: Locale
+): string {
+  if (!text) return "";
+  const other: Locale = locale === "fa" ? "en" : "fa";
+  return text[locale]?.trim() ? text[locale] : (text[other] ?? "");
 }
 
 export interface StoryChapter {

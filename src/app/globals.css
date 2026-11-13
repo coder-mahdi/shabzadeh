@@ -97,3 +97,42 @@ html[dir="ltr"] .font-meta {
 html[dir="rtl"] .marquee-track {
   animation-direction: reverse;
 }
+
+/* Body text coming from the WordPress editor (see components/RichText.tsx) */
+.rich-text > * + * {
+  margin-top: 1.25em;
+}
+
+.rich-text a {
+  color: var(--color-wine);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.rich-text strong {
+  font-weight: 700;
+}
+
+.rich-text ul,
+.rich-text ol {
+  padding-inline-start: 1.5em;
+}
+
+.rich-text ul {
+  list-style: disc;
+}
+
+.rich-text ol {
+  list-style: decimal;
+}
+
+.rich-text blockquote {
+  border-inline-start: 4px solid var(--color-gold);
+  padding-inline-start: 1em;
+  color: var(--color-ink-soft);
+}
+
+.rich-text img {
+  max-width: 100%;
+  height: auto;
+}

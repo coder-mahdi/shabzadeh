@@ -10,6 +10,12 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "picsum.photos",
       },
+      {
+        // Cover images uploaded in the WordPress CMS
+        protocol: "https",
+        hostname: "cms.mahdiroozbahani.com",
+        pathname: "/wp-content/uploads/**",
+      },
     ],
   },
 };
